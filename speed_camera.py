@@ -42,7 +42,6 @@ while cap.isOpened():
     avg += frame
     count += 1
 
-# seriously fuck the people that didn't hide this typing bullshit, get the fuck out
 avg /= count
 avg = np.asarray(avg, dtype=np.uint8)
 avg = cv2.resize(avg, (1000, 600))
